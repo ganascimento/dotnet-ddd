@@ -13,3 +13,7 @@ This is a project template using CQRS and DDD, using Microsoft's best suggestion
 - SqlServer
 - Identity
 - JWT
+
+## Status
+
+[ ] Finish
