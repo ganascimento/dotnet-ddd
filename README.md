@@ -1,8 +1,8 @@
-# Sample Project
+# Dotnet MediatR
 
 ## About
 
-This is a project template using DDD and Microsoft's best suggestions
+This is a project template using MediatR and Microsoft's best suggestions
 
 ## Resources
 
@@ -16,4 +16,4 @@ This is a project template using DDD and Microsoft's best suggestions
 
 ## Status
 
-[ ] Finish
+[x] Finish
