@@ -2,7 +2,7 @@
 
 ## About
 
-This is a project template using CQRS and DDD, using Microsoft's best suggestions
+This is a project template using DDD and Microsoft's best suggestions
 
 ## Resources
 
