@@ -12,18 +12,18 @@ public class UpdateEmployeeCommand : IRequest<ResponseService>
     public required string MotherName { get; set; }
     public string? FatherName { get; set; }
     public required byte Sex { get; set; }
-    public required UpdateAddressDto Address { get; set; }
-    public UpdatePhoneDto? Telephone { get; set; }
-    public UpdatePhoneDto? Cellphone { get; set; }
+    public required UpdateEmployeeAddressDto Address { get; set; }
+    public UpdateEmployeePhoneDto? Telephone { get; set; }
+    public UpdateEmployeePhoneDto? Cellphone { get; set; }
 }
 
-public record UpdatePhoneDto
+public record UpdateEmployeePhoneDto
 {
     public required string AreaCode { get; set; }
     public required string PhoneNumber { get; set; }
 }
 
-public record UpdateAddressDto
+public record UpdateEmployeeAddressDto
 {
     public required string Street { get; set; }
     public required string City { get; set; }

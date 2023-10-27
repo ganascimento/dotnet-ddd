@@ -8,10 +8,10 @@ public class UpdateCompanyCommand : IRequest<ResponseService>
     public required int Id { get; set; }
     public required string CorporateName { get; set; }
     public required string FantasyName { get; set; }
-    public required UpdateAddressDto Address { get; set; }
+    public required UpdateCompanyAddressDto Address { get; set; }
 }
 
-public record UpdateAddressDto
+public record UpdateCompanyAddressDto
 {
     public int Id { get; set; }
     public required string Street { get; set; }

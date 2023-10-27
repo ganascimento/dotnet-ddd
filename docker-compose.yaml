@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  api:
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    container_name: mediatr_app
+    ports:
+      - "5000:80"
+    environment:
+      ConnectionStrings__DefaultConnection: Server=sqlserver;Database=SampleDB;User Id=sa;Password=1q2w3e4r@#$;TrustServerCertificate=True;
+    depends_on:
+      - sqlserver
+    networks:
+      - app_network
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:latest
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: Y
+      MSSQL_SA_PASSWORD: 1q2w3e4r@#$
+    networks:
+      - app_network
+
+networks:
+  app_network:

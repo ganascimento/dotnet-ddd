@@ -23,6 +23,7 @@ public class CompanyController : BaseController
     }
 
     [EnableQuery]
+    [HttpGet]
     public IActionResult Get()
     {
         return Ok(_companyQuery.GetOData());

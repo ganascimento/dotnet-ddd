@@ -23,6 +23,7 @@ public class EmployeeController : BaseController
     }
 
     [EnableQuery]
+    [HttpGet]
     public IActionResult Get()
     {
         return Ok(_employeeQuery.GetOData());

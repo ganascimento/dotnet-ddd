@@ -8,13 +8,13 @@ public class EmployeeMapping : Profile
 {
     public EmployeeMapping()
     {
-        CreateMap<CreateAddressDto, Address>();
+        CreateMap<CreateEmployeeAddressDto, Address>();
 
-        CreateMap<UpdateAddressDto, Address>();
+        CreateMap<UpdateEmployeeAddressDto, Address>();
 
-        CreateMap<CreatePhoneDto, Phone>();
+        CreateMap<CreateEmployeePhoneDto, Phone>();
 
-        CreateMap<UpdatePhoneDto, Phone>();
+        CreateMap<UpdateEmployeePhoneDto, Phone>();
 
         CreateMap<CreateEmployeeCommand, Employee>()
             .ForMember(dest => dest.Address, opt => opt.MapFrom(src => src.Address))

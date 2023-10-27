@@ -12,18 +12,18 @@ public class CreateEmployeeCommand : IRequest<ResponseService>
     public string? FatherName { get; set; }
     public required byte Sex { get; set; }
     public required int CompanyId { get; set; }
-    public required CreateAddressDto Address { get; set; }
-    public CreatePhoneDto? Telephone { get; set; }
-    public CreatePhoneDto? Cellphone { get; set; }
+    public required CreateEmployeeAddressDto Address { get; set; }
+    public CreateEmployeePhoneDto? Telephone { get; set; }
+    public CreateEmployeePhoneDto? Cellphone { get; set; }
 }
 
-public record CreatePhoneDto
+public record CreateEmployeePhoneDto
 {
     public required string AreaCode { get; set; }
     public required string PhoneNumber { get; set; }
 }
 
-public record CreateAddressDto
+public record CreateEmployeeAddressDto
 {
     public required string Street { get; set; }
     public required string City { get; set; }

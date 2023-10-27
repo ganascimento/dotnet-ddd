@@ -6,7 +6,7 @@ namespace SampleProject.API.Controllers.Base;
 
 public class BaseController : ODataController
 {
-    public IActionResult HandleResult(ResponseService responseService)
+    protected IActionResult HandleResult(ResponseService responseService)
     {
         if (responseService.Success)
             return Ok(responseService);

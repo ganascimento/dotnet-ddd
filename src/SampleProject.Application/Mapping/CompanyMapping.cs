@@ -8,9 +8,9 @@ public class CompanyMapping : Profile
 {
     public CompanyMapping()
     {
-        CreateMap<CreateAddressDto, Address>();
+        CreateMap<CreateCompanyAddressDto, Address>();
 
-        CreateMap<UpdateAddressDto, Address>();
+        CreateMap<UpdateCompanyAddressDto, Address>();
 
         CreateMap<CreateCompanyCommand, Company>()
             .ForMember(dest => dest.Address, opt => opt.MapFrom(src => src.Address));

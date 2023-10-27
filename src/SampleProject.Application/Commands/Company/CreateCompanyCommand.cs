@@ -8,11 +8,11 @@ public class CreateCompanyCommand : IRequest<ResponseService>
     public required string CorporateName { get; set; }
     public required string FantasyName { get; set; }
     public required string Document { get; set; }
-    public required CreateAddressDto Address { get; set; }
+    public required CreateCompanyAddressDto Address { get; set; }
 
 }
 
-public record CreateAddressDto
+public record CreateCompanyAddressDto
 {
     public required string Street { get; set; }
     public required string City { get; set; }
